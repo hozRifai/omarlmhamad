@@ -1,0 +1,5 @@
+Django==1.11.4
+pytz==2017.2
+gunicorn==19.7.1
+python-dateutil==2.2
+django-hosts==2.0
