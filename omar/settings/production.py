@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'omar.urls'
-#ROOT_HOSTCONF = "omar.hosts"
+ROOT_HOSTCONF = "omar.hosts"
 DEFAULT_HOST  ="www" 
 DEFAULT_REDIRECT_URL = "https://omarlmhamad.herokuapp.com"
 PARENT_HOST = "omarlmhamad.herokuapp.com"
