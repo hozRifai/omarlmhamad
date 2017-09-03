@@ -1,1 +1,1 @@
-web : gunicorn omar.wsgi --log-file - 
+web : gunicorn omar.wsgi 
