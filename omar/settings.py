@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'omar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
- DATABASES = {
+DATABASES = {
       'default': dj_database_url.config(
           default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
       )
@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
  
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -136,4 +136,4 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
