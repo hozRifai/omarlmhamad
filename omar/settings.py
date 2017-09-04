@@ -54,7 +54,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
 ROOT_URLCONF = 'omar.urls'
+
+DEFAULT_HOST  ="www" 
+DEFAULT_REDIRECT_URL = "https://omarlmhamad.herokuapp.com"
+PARENT_HOST = "omarlmhamad.herokuapp.com"
 
 TEMPLATES = [
     {
