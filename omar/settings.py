@@ -26,7 +26,7 @@ SECRET_KEY = '-vyq8ybs%)h4u2^_m6zgg!zei^+k2t$_0cn@g#j@&3x!!y0ctu'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-ALLOWED_HOSTS = ['https://omarlmhamad.herokuapp.com/' , "omarlmhamad.herokuapp.com"]
+ALLOWED_HOSTS = ['https://omarlmhamad.herokuapp.com/' , "omarlmhamad.herokuapp.com" , "127.0.0.1"]
 
 DEBUG = False
 # Application definition
