@@ -3,3 +3,5 @@ pytz==2017.2
 gunicorn==19.7.1
 python-dateutil==2.2
 django-hosts==2.0
+dj_database_url==0.4.2
+whitenoise==3.3.0

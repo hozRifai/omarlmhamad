@@ -2,7 +2,12 @@ venv
 *.pyc
 staticfiles
 .env
-
+s/__pycache__
+s/__init__.py
+s/local.py
+s/production.py
+__pycache__
+local_settings.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
