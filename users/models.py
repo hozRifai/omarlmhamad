@@ -30,7 +30,7 @@ class Users(models.Model):
         help_text="Description part !")
     timestamp = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(default=datetime.now )
-    expiry = models.DateTimeField( efault=self.updated+timedelta(days=30) )
+    expiry = models.DateTimeField( default=self.updated+timedelta(days=30) )
 
     def save(self , *args, **kwargs):
         if self.expiry >= self.updated:
