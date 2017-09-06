@@ -20,6 +20,11 @@ class Location(models.Model):
 
 class Users(models.Model):
 
+
+    def get_expiry():
+        return datetime.now() + timedelta(days=30)
+
+
     location = models.ForeignKey(Location, null=True)
     name = models.CharField(max_length=60)
     phone_number = models.IntegerField(default=0)
@@ -29,9 +34,12 @@ class Users(models.Model):
     descrition = models.TextField(
         help_text="Description part !")
     timestamp = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(default=datetime.now )
-    expiry = models.DateTimeField( default=self.updated+timedelta(days=30) )
+    updated = models.DateTimeField(default=now )
+    expiry = models.DateTimeField( default=get_expiry)
 
+    def get_expiry():
+        return now + timedelta(days=30)
+    
     def save(self , *args, **kwargs):
         if self.expiry >= self.updated:
             self.status = "P"
